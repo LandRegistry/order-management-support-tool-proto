@@ -1,0 +1,45 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Coded design prototype 
+    </h1>
+    <h2 class="govuk-heading-m">What is the purpose of this prototype?</h2>
+    <p class="govuk-body">This is a coded version of the Business Gateway Order Management tool designs. These designs are <strong>non-functional</strong> and are minimally interactive. <strong>They are intended to be an additional way for developers to view the designs, allowing for cleaner CSS styles than what Figma can output.</strong></p>
+    <h2 class="govuk-heading-m">Pages</h2>
+    <p class="govuk-body">These are links to the various pages of the tool. Because the pages are non-functional, this is the best way to find the page you are looking for.</p>
+  </div>
+  <div class="govuk-grid-column-full">
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open</h3>
+      <p class="govuk-body-s">This shows the search page with filters open, but before the user has taken any action that would create search results.</p>
+      </div>
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open, with search results</h3>
+      <p class="govuk-body-s">This shows the search page with the filters open after a user has taken an action that creates search results.</p>
+    </div>
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open, no results found</h3>
+      <p class="govuk-body-s">This shows the search page with the filters open and when no results fit the conditions of a search.</p>
+    </div>
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open</h3>
+      <p class="govuk-body-s">This shows the search page with filters open, but before the user has taken any action that would create search results.</p>
+      </div>
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open, with search results</h3>
+      <p class="govuk-body-s">This shows the search page with the filters open after a user has taken an action that creates search results.</p>
+    </div>
+    <div class="page-card">
+      <h3 class="govuk-heading-s">Search - Filters open, no results found</h3>
+      <p class="govuk-body-s">This shows the search page with the filters open and when no results fit the conditions of a search.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

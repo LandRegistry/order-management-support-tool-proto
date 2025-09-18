@@ -1,0 +1,8 @@
+{
+  "serviceName": "Business Gateway integration support",
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": false
+    }
+  }
+}

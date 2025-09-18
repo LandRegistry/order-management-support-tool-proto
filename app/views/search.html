@@ -1,0 +1,181 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<!--Title and search-->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+    <h1 class="govuk-heading-xl">Customer integration support</h1>
+    <h2 class="govuk-heading-m">Search</h2>
+    <div>
+      <div class="govuk-form-group search-parent">
+        <div class="search-field-group">
+          <label class="govuk-label" for="width-10">
+            Application request ID
+          </label>
+          <div class="search-field">
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+            <div>
+              <img src="/public/images/search-icon.svg" alt="search icon">
+            </div>
+          </div>
+        </div>
+        <div class="govuk-button-group">
+          <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Hide filters
+          </button>
+          <button type="submit" class="govuk-button govuk-button--inverse inverse-border" data-module="govuk-button">
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Filters-->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="filters-container">
+      <div class="filters-heading">
+        <h3 class="govuk-heading-m">Filters</h3>
+      </div>
+      <div class="filters">
+        <h4 class="govuk-heading-s">Application details</h4>
+        <div class="filter-group">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              ABR
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              Additional provider filter
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              Order status
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="all" selected>All</option>
+              <option value="status-opt-1">STATUS OPTION 1</option>
+              <option value="status-opt-2">STATUS OPTION 2</option>
+              <option value="status-opt-3">STATUS OPTION 3</option>
+            </select>
+          </div>
+        </div>
+        <h4 class="govuk-heading-s reduce-space">Order time received</h4>
+        <p class="govuk-body hint-text">For example, 12 11 2007, 14:35:00 to 12 11 2007, 14:40:31</p>
+        <div class="time-filter-group">
+          <div class="filter-group">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="start-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-input--width-2" id="start-day" name="start-day" type="text" value="12">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="start-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-input--width-2" id="start-month" name="start-month" type="text"
+                value="11">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="start-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-input--width-4" id="start-year" name="start-year" type="text"
+                value="2025">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="start-time">
+                Time
+              </label>
+              <input class="govuk-input govuk-input--width-5" id="start-time" name="start-time" type="text"
+                value="00:00:00">
+            </div>
+          </div>
+          <div class="to-text">
+            <div>
+              <p class="govuk-body">to</p>
+            </div>
+
+          </div>
+          <div class="filter-group">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="end-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-input--width-2" id="end-day" name="end-day" type="text" value="12">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="end-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-input--width-2" id="end-month" name="end-month" type="text" value="11">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="end-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-input--width-4" id="end-year" name="end-year" type="text" value="2025">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="end-time">
+                Time
+              </label>
+              <input class="govuk-input govuk-input--width-5" id="end-time" name="end-time" type="text"
+                value="23:59:59">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Reset time received
+        </button>
+        <br /><br />
+        <h4 class="govuk-heading-s">Applicant details</h4>
+        <div class="filter-group">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              User ID
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              Key number
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              Business unit ID
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+          </div>
+        </div>
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+      </div>
+    </div>
+    <p>govuk-grid-column-full</p>
+  </div>
+</div>
+
+<!--Search results-->
+
+
+{% endblock %}
+
+{% block footer %}
+{% from "hmlr/components/footer/macro.njk" import hmlrFooter %}
+{{ hmlrFooter() }}
+{% endblock %}

@@ -1,0 +1,158 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add extra styles here
+
+.search-parent {
+    width: 700px;
+    margin-bottom: 0px;
+}
+
+.search-parent button {
+    margin-top: 30px;
+    margin-right: 16px;
+}
+
+.search-field  {
+    background-color: #bada55;
+    width: 259px;
+    margin-right: 20px;
+}
+
+.search-field input {
+    float: left;
+}
+
+.search-field div {
+    background-color: #1D70B8;
+    float: right;
+    padding: 10.5px;
+    width: 19.5px;
+    height: 19.5px;
+}
+
+.extra-buttons {
+    float: right;
+    height: 70px;
+    padding-top: 40px;
+}
+
+.search-field-group {
+    float: left;
+}
+
+.inverse-border {
+    border: .25px .25px 0 .25px;
+    border-color: #1D70B8;
+
+}
+
+.filters-container {
+    border: 1px;
+    border-color: #ADADAD;
+    border-style: solid;
+}
+
+.filters-container h3 {
+    margin-bottom: 0px;
+}
+
+.filters-heading {
+    background-color: #F3F2F1;
+    border-bottom: 1px;
+    border-bottom-color: #ADADAD;
+    padding: 10px 16px 10px 16px;
+    border-bottom-style: solid;
+}
+
+.filters {
+    background-color: #Ffffff;
+    padding: 10px 16px 10px 16px;
+}
+
+.filter-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    display: flex;
+}
+
+.filter-group div {
+    margin-right: 16px;
+    margin-left: 0px;
+
+}
+
+.help-text {
+    color: #505A5F;
+}
+
+.reduce-space {
+    margin-bottom: 8px;
+}
+
+.govuk-button {
+    margin-bottom: 8px;;
+}
+
+.to-text {
+    height: 70px;
+    margin-bottom: -20px;
+    position: relative;
+    
+}
+
+.to-text div {
+    height: 20px;
+    position: relative;
+    bottom: -38px;
+}
+
+.to-text p {
+    margin-right: 16px;
+    margin-top: -16px;
+    margin-bottom: -16px;
+}
+
+.time-filter-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    display: flex;
+}
+
+.govuk-table a {
+    color: #1D70B8;
+}
+
+.pagination-text {
+    width: 100%;
+}
+
+.page-count-text {
+    float: left;
+}
+
+.apps-per-page-text {
+    float: right;
+}
+
+.per-page-selector {
+    float: right;
+}
+
+.pagination-components nav {
+    float: left;
+}
+
+.page-card {
+    width: 28%;
+    border: 1px;
+    border-color: #ADADAD;
+    border-style: solid;
+    padding: 16px;
+    margin: 8px 8px 8px 0px;
+    float: left;
+}

@@ -1,0 +1,35 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{% block header %}
+
+  <header class="govuk-header govuk-header--hmlr " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__content govuk-header__content--hmlr">
+      <a href="#" class="govuk-header__link govuk-header__service-name">
+        Business Gateway integration support
+      </a>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer govuk-footer--hmlr " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+      </div>
+      <div class="govuk-footer__meta-item">
+        <span class="govuk-footer__link govuk-footer__copyright-logo govuk-footer__copyright-logo--hmlr"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
