@@ -7,174 +7,181 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% block content %}
 <!--Title and search-->
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-full detail-title">
     <a href="#" class="govuk-back-link">Back</a>
     <h1 class="govuk-heading-xl">C20240314-063656-948</h1>
   </div>
   <div class="govuk-grid-column-two-thirds">
 
 
-    <h2 class="govuk-heading-m">Applicant details</h2>
+    <div class="details-section">
+      <h2 class="govuk-heading-m">Applicant details</h2>
 
-    <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          User ID
-        </dt>
-        <dd class="govuk-summary-list__value">
-          STARLIGHT300
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Key number
-        </dt>
-        <dd class="govuk-summary-list__value">
-          1013553
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Business unit ID
-        </dt>
-        <dd class="govuk-summary-list__value">
-          1013553
-        </dd>
-      </div>
-    </dl>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            User ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            STARLIGHT300
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Key number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            1013553
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Business unit ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            1013553
+          </dd>
+        </div>
+      </dl>
+    </div>
 
-    <h2 class="govuk-heading-m">Application details</h2>
+    <div class="details-section">
+      <h2 class="govuk-heading-m">Application details</h2>
 
-    <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Received
-        </dt>
-        <dd class="govuk-summary-list__value">
-          2025-08-01<br>16:45:01.593987
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          ABR
-        </dt>
-        <dd class="govuk-summary-list__value">
-          N6789B
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Includes attachments
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Yes
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Includes correspondence
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Yes
-        </dd>
-      </div>
-    </dl>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Received
+          </dt>
+          <dd class="govuk-summary-list__value">
+            2025-08-01<br>16:45:01.593987
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            ABR
+          </dt>
+          <dd class="govuk-summary-list__value">
+            N6789B
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Includes attachments
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Includes correspondence
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+      </dl>
+    </div>
 
-    <h2 class="govuk-heading-m">Errors</h2>
+    <div class="details-section">
+      <h2 class="govuk-heading-m">Errors</h2>
 
-    <table class="govuk-table">
+      <table class="govuk-table">
 
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header">Type</th>
-          <th scope="col" class="govuk-table__header">Description</th>
-          <th scope="col" class="govuk-table__header">Pointer</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">Error type</th>
-          <td class="govuk-table__cell">A description of the error would go here</td>
-          <td class="govuk-table__cell">/data/transactions/transfer_transaction_details/details</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th scope="row" class="govuk-table__header">Error type</th>
-          <td class="govuk-table__cell">A description of the error would go here</td>
-          <td class="govuk-table__cell">/data/transactions/transfer_transaction_details/details</td>
-        </tr>
-      </tbody>
-    </table>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Type</th>
+            <th scope="col" class="govuk-table__header">Description</th>
+            <th scope="col" class="govuk-table__header">Pointer</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Error type</th>
+            <td class="govuk-table__cell">A description of the error would go here</td>
+            <td class="govuk-table__cell">/data/transactions/transfer_transaction_details/details</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Error type</th>
+            <td class="govuk-table__cell">A description of the error would go here</td>
+            <td class="govuk-table__cell">/data/transactions/transfer_transaction_details/details</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h2 class="govuk-heading-m">Attachments and correspondence</h2>
+    <div class="details-section">
+      <h2 class="govuk-heading-m">Attachments and correspondence</h2>
+      <br>
+    
 
-    <div class="govuk-tabs" data-module="govuk-tabs">
-      <h2 class="govuk-tabs__title">
-        Contents
-      </h2>
-      <ul class="govuk-tabs__list">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#attachment-details">
-            Attachment details (3)
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#correspondence-details">
-            Correspondence details (2)
-          </a>
-        </li>
-      </ul>
-      <div class="govuk-tabs__panel" id="attachment-details">
-        <h2 class="govuk-heading-l">Attachment details</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Created</th>
-              <th scope="col" class="govuk-table__header">File name</th>
-              <th scope="col" class="govuk-table__header">File type</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
-              <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
-              <td class="govuk-table__cell">PDF</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__cell">2025-08-01<br>16:45:01.593987</th>
-              <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
-              <td class="govuk-table__cell">PDF</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
-              <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
-              <td class="govuk-table__cell">PDF</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="correspondence-details">
-        <h2 class="govuk-heading-l">Correspondence details</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Created</th>
-              <th scope="col" class="govuk-table__header">File name</th>
-              <th scope="col" class="govuk-table__header">File type</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
-              <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
-              <td class="govuk-table__cell">PDF</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__cell">2025-08-01<br>16:45:01.593987</th>
-              <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
-              <td class="govuk-table__cell">PDF</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#attachment-details">
+              Attachment details (3)
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#correspondence-details">
+              Correspondence details (2)
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="attachment-details">
+          <h2 class="govuk-heading-l">Attachment details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Created</th>
+                <th scope="col" class="govuk-table__header">File name</th>
+                <th scope="col" class="govuk-table__header">File type</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
+                <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
+                <td class="govuk-table__cell">PDF</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell">2025-08-01<br>16:45:01.593987</th>
+                <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
+                <td class="govuk-table__cell">PDF</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
+                <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
+                <td class="govuk-table__cell">PDF</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="correspondence-details">
+          <h2 class="govuk-heading-l">Correspondence details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Created</th>
+                <th scope="col" class="govuk-table__header">File name</th>
+                <th scope="col" class="govuk-table__header">File type</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">2025-08-01<br>16:45:01.593987</th>
+                <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
+                <td class="govuk-table__cell">PDF</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell">2025-08-01<br>16:45:01.593987</th>
+                <td class="govuk-table__cell"><a href="">CAN_GR594510.PDF</a></td>
+                <td class="govuk-table__cell">PDF</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
