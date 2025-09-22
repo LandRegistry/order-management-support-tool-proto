@@ -18,58 +18,101 @@
       is the best way to find the page you are looking for. These pages will each open in a new tab.</p>
   </div>
   <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-s">Search page</h2>
-    <div class="page-card">
-      <h3 class="govuk-heading-s"><a href="search.html" class="govuk-link" target="_blank">Search - Filters open</a></h3>
-      <p class="govuk-body-s">This shows the search page with filters open, but before the user has taken any action
-        that would create search results.</p>
-        <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
-    </div>
-    <div class="page-card">
-      <h3 class="govuk-heading-s"><a href="search-results.html" class="govuk-link" target="_blank">Search - Filters open, with search results</a></h3>
-      <p class="govuk-body-s">This shows the search page with the filters open after a user has taken an action that
-        creates search results.</p>
-        <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
-    </div>
-    <div class="page-card">
-      <h3 class="govuk-heading-s"><a href="search-noresults.html" class="govuk-link" target="_blank">Search - Filters open, no results found</a></h3>
-      <p class="govuk-body-s">This shows the search page with the filters open and when no results fit the conditions of
-        a search.</p>
-        <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
-    </div>
-  </div>
-  <div class="govuk-grid-column-full">
-  <div class="page-card">
-    <h3 class="govuk-heading-s"><a href="search-filters-closed.html" class="govuk-link" target="_blank">Search - Filters closed</a></h3>
-    <p class="govuk-body-s">This shows the search page with filters closed, before the user has taken any action that
-      would create search results.</p>
-      <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
-  </div>
-  <div class="page-card">
-    <h3 class="govuk-heading-s"><a href="search-results-closed-filters.html" class="govuk-link" target="_blank">Search - Filters closed, with search results</a></h3>
-    <p class="govuk-body-s">This shows the search page with the filters closed after a user has taken an action that
-      creates search results.</p>
-      <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
-  </div>
-  <div class="page-card">
-    <h3 class="govuk-heading-s"><a href="search-results-single-page.html" class="govuk-link" target="_blank">Search - Show all results in single page</a></h3>
-    <p class="govuk-body-s">This shows the search page when the user has selected "all" for Applications per page.</p>
-      <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
-  </div>
-  <br clear="all"/>
-  <div class="spacer"></div>
-  <h2 class="govuk-heading-s">Details page</h2>
-  <div class="page-card">
-    <h3 class="govuk-heading-s"><a href="details-page.html" class="govuk-link" target="_blank">Details page - All information</a></h3>
-    <p class="govuk-body-s">This shows the details page when all information is available.</p>
-      <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
-  </div>
-  <div class="page-card">
-    <h3 class="govuk-heading-s"><a href="details-page-empty-states.html" class="govuk-link" target="_blank">Details page - Empty states</a></h3>
-    <p class="govuk-body-s">This shows the details page with the empty states for errors, attachments and correspondence.</p>
-      <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
-  </div>
-</div>
-</div>
 
-{% endblock %}
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#mvp">
+            MVP (Oct 2025)
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#post-mvp">
+            Post-MVP
+          </a>
+        </li>
+      </ul>
+      <div class="govuk-tabs__panel" id="mvp">
+        <h2 class="govuk-heading-m">MVP (Oct 2025)</h2>
+        <h2 class="govuk-heading-s">Search page</h2>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search.html" class="govuk-link" target="_blank">Search - Filters open</a>
+          </h3>
+          <p class="govuk-body-s">This shows the search page with filters open, but before the user has taken any action
+            that would create search results.</p>
+          <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
+        </div>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search-results.html" class="govuk-link" target="_blank">Search - Filters
+              open, with search results</a></h3>
+          <p class="govuk-body-s">This shows the search page with the filters open after a user has taken an action that
+            creates search results.</p>
+          <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
+        </div>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search-noresults.html" class="govuk-link" target="_blank">Search -
+              Filters
+              open, no results found</a></h3>
+          <p class="govuk-body-s">This shows the search page with the filters open and when no results fit the
+            conditions of
+            a search.</p>
+          <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
+        </div>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search-filters-closed.html" class="govuk-link" target="_blank">Search -
+              Filters closed</a></h3>
+          <p class="govuk-body-s">This shows the search page with filters closed, before the user has taken any action
+            that
+            would create search results.</p>
+          <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
+        </div>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search-results-closed-filters.html" class="govuk-link"
+              target="_blank">Search
+              - Filters closed, with search results</a></h3>
+          <p class="govuk-body-s">This shows the search page with the filters closed after a user has taken an action
+            that
+            creates search results.</p>
+          <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
+        </div>
+        <div class="page-card">
+          <h3 class="govuk-heading-s"><a href="mvp/search-results-single-page.html" class="govuk-link"
+              target="_blank">Search
+              -
+              Show all results in single page</a></h3>
+          <p class="govuk-body-s">This shows the search page when the user has selected "all" for Applications per page.
+          </p>
+          <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
+        </div>
+        <br clear="all" />
+      <div class="spacer"></div>
+      <h2 class="govuk-heading-s">Details page</h2>
+      <div class="page-card">
+        <h3 class="govuk-heading-s"><a href="mvp/details-page.html" class="govuk-link" target="_blank">Details page - All
+            information</a></h3>
+        <p class="govuk-body-s">This shows the details page when all information is available.</p>
+        <p class="govuk-body-s last-updated">Last updated: 18 Sept 2025</p>
+      </div>
+      <div class="page-card">
+        <h3 class="govuk-heading-s"><a href="mvp/details-page-empty-states.html" class="govuk-link" target="_blank">Details
+            page - Empty states</a></h3>
+        <p class="govuk-body-s">This shows the details page with the empty states for errors, attachments and
+          correspondence.</p>
+        <p class="govuk-body-s last-updated">Last updated: 22 Sept 2025</p>
+      </div>
+      <br clear="all">
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="post-mvp">
+        <h2 class="govuk-heading-m">Post-MVP</h2>
+      </div>
+    </div>
+
+
+
+   
+  </div>
+
+  {% endblock %}

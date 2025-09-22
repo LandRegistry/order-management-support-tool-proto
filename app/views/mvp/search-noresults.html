@@ -8,7 +8,7 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 <!--Title and search-->
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-three-quarters">
-    <h1 class="govuk-heading-xl">Customer integration support</h1>
+    <h1 class="govuk-heading-xl">Order management support</h1>
     <h2 class="govuk-heading-m">Search</h2>
     <div>
       <div class="govuk-form-group search-parent">
@@ -24,7 +24,9 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
           </div>
         </div>
         <div class="govuk-button-group">
-          <a href="search-results-closed-filters.html" class="govuk-button govuk-button--secondary button-link">Hide filters</a>
+          <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Hide filters
+          </button>
           <button type="submit" class="govuk-button govuk-button--inverse inverse-border" data-module="govuk-button">
             Clear
           </button>
@@ -42,17 +44,10 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
         <h3 class="govuk-heading-m">Filters</h3>
       </div>
       <div class="filters">
-        <h4 class="govuk-heading-s">Application details</h4>
         <div class="filter-group">
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
               ABR
-            </label>
-            <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
-          </div>
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="width-10">
-              Additional provider filter
             </label>
             <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
           </div>
@@ -138,7 +133,6 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
           Reset time received
         </button>
         <br /><br />
-        <h4 class="govuk-heading-s">Applicant details</h4>
         <div class="filter-group">
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
@@ -148,13 +142,13 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
-              Key number
+              Business unit ID
             </label>
             <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
-              Business unit ID
+              Additional provider
             </label>
             <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
           </div>
@@ -164,110 +158,20 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
         </button>
       </div>
     </div>
+   
   </div>
 </div>
 <br><br>
 <!--Search results-->
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header">Application<br>request ID</th>
-          <th scope="col" class="govuk-table__header">Time received</th>
-          <th scope="col" class="govuk-table__header">ABR</th>
-          <th scope="col" class="govuk-table__header">User ID</th>
-          <th scope="col" class="govuk-table__header">Additional<br>provider</th>
-          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Key number</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">InfoTrack</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">Advantage Pr...</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">Enact</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">–</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">Legal Bricks</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">–</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">JS Law Limit...</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">–</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">Hoowla</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link">20240314...948</a></td>
-          <td class="govuk-table__cell">14-03-2024<br>06.36.57.803729</td>
-          <td class="govuk-table__cell">N6789B</td>
-          <td class="govuk-table__cell">STARLIGHT300</td>
-          <td class="govuk-table__cell">TM Group</td>
-          <td class="govuk-table__cell govuk-table__cell--numeric">1013553</td>
-        </tr>
-
-      </tbody>
-    </table>
+    <div class="noresults">
+    <p class="govuk-body">No results found. Check the application request ID or make changes to the selected filters.</p>
+    </div>
+    <br clear="all">
     <!--Pagination-->
     <div class="pagination-text">
-      <p class="page-count-text">Showing <strong>1</strong> to <strong>10</strong> of <strong>54</strong> applications
+      <p class="page-count-text">Showing <strong>0</strong> to <strong>0</strong> of <strong>0</strong> applications
       </p>
       <p class="apps-per-page-text">Applications per page</p>
     </div>
@@ -280,33 +184,7 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
               1
             </a>
           </li>
-          <li class="govuk-pagination__item">
-            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
-              2
-            </a>
-          </li>
-          <li class="govuk-pagination__item govuk-pagination__item--ellipses">
-            &ctdot;
-          </li>
-          <li class="govuk-pagination__item">
-            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
-              6
-            </a>
-          </li>
         </ul>
-        <div class="govuk-pagination__next">
-          <a class="govuk-link govuk-pagination__link" href="#" rel="next">
-            <span class="govuk-pagination__link-title">
-              Next<span class="govuk-visually-hidden"> page</span>
-            </span>
-            <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg"
-              height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
-              <path
-                d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
-              </path>
-            </svg>
-          </a>
-        </div>
       </nav>
       <div class="per-page-selector">
         <ul class="govuk-pagination__list">
@@ -324,7 +202,6 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
       </div>
     </div>
     <br clear="all">
-  
   </div>
 </div>
 
