@@ -4,6 +4,20 @@
 GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block header %}
+
+  <header class="govuk-header govuk-header--hmlr " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__content govuk-header__content--hmlr">
+      <a href="../index.html" class="govuk-header__link govuk-header__service-name">
+        Business Gateway Integration support tool
+      </a>
+    </div>
+  </div>
+</header>
+
+{% endblock %}
+
 {% block content %}
 <!--Title and search-->
 <div class="govuk-grid-row">

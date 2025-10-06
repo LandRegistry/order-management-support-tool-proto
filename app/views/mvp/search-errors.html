@@ -6,7 +6,7 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 
 {% block header %}
 
-  <header class="govuk-header govuk-header--hmlr " role="banner" data-module="govuk-header">
+<header class="govuk-header govuk-header--hmlr " role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__content govuk-header__content--hmlr">
       <a href="../index.html" class="govuk-header__link govuk-header__service-name">
@@ -36,15 +36,19 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
               <img src="/public/images/search-icon.svg" alt="search icon">
             </div>
           </div>
-        </div>
-        <div class="govuk-button-group">
-          <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Hide filters
-          </button>
+          <div class="govuk-button-group">
+          <a href="search-filters-closed.html" class="govuk-button govuk-button--secondary button-link">Hide filters</a>
           <button type="submit" class="govuk-button govuk-button--inverse inverse-border" data-module="govuk-button">
             Clear
           </button>
         </div>
+        </div>
+       <!--  <div class="govuk-button-group">
+          <a href="search-filters-closed.html" class="govuk-button govuk-button--secondary button-link">Hide filters</a>
+          <button type="submit" class="govuk-button govuk-button--inverse inverse-border" data-module="govuk-button">
+            Clear
+          </button>
+        </div> -->
       </div>
     </div>
   </div>
@@ -172,52 +176,12 @@ GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
         </button>
       </div>
     </div>
-   
+
   </div>
 </div>
-<br><br>
+
 <!--Search results-->
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <div class="noresults">
-    <p class="govuk-body">No results found. Check the application request ID or make changes to the selected filters.</p>
-    </div>
-    <br clear="all">
-    <!--Pagination-->
-    <div class="pagination-text">
-      <p class="page-count-text">Showing <strong>0</strong> to <strong>0</strong> of <strong>0</strong> applications
-      </p>
-      <p class="apps-per-page-text">Applications per page</p>
-    </div>
-    <br clear="all" />
-    <div class="pagination-components">
-      <nav class="govuk-pagination" aria-label="Pagination">
-        <ul class="govuk-pagination__list">
-          <li class="govuk-pagination__item govuk-pagination__item--current">
-            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
-              1
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="per-page-selector">
-        <ul class="govuk-pagination__list">
-          <li class="govuk-pagination__item govuk-pagination__item--current">
-            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
-              10
-            </a>
-          </li>
-          <li class="govuk-pagination__item">
-            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
-              All
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <br clear="all">
-  </div>
-</div>
+
 
 {% endblock %}
 
